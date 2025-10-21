@@ -1,5 +1,6 @@
 @import url("fonts.css");
 @import url("var.css");
+@import url("media.css");
 
 /* Poppins Font Weights */
 .poppins-regular {
@@ -45,6 +46,7 @@ body {
   font-weight: 400;
   color: var(--main-white);
   font-size: 16px;
+  background-color: brown;
 }
 
 a {
@@ -68,6 +70,7 @@ img {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 15px;
 }
 
 header {
@@ -169,7 +172,8 @@ header nav ul li.btn a:hover {
 .hero img {
   position: absolute;
   top: -244px;
-  right: -34px;
+  right: 1px;
+  object-fit: cover;
 }
 
 /* Hero Section Styles End */
