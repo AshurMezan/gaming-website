@@ -222,6 +222,31 @@ header nav ul li.btn a:hover {
   justify-content: center;
 }
 
+
+
+/* Start Анимация при наведении */
+.trending .games .block img {
+  transition: all 1s ease;
+}
+
+.trending .games .block img:hover {
+  transform: scale(1.1);
+}
+
+/* Все затемняются при наведении на контейнер */
+.trending .games:hover .block img {
+  filter: brightness(0.7);
+}
+
+/* Текущий — увеличивается и очищается */
+.trending .games .block:hover img {
+  transform: scale(1.1);
+  filter: none;
+}
+
+
+/* END Анимация при наведении */
+
 /* Section trending END*/
 
 /* Start big-text*/
@@ -237,6 +262,7 @@ header nav ul li.btn a:hover {
 /* Start banner*/
 .banner {
   margin-top: 65px;
+  padding-bottom: 155px;
 }
 
 .banner h3 {
