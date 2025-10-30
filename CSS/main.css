@@ -220,7 +220,31 @@ header nav ul li.btn a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative; /* важно для ::after */
+  padding-bottom: 13px; /* место под линию */
 }
+
+/* Линия — изначально невидима */
+.trending .games .block span::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  width: 60%;
+  height: 5px;
+  background: var(--main-active);
+  border-radius: 10px;
+  transform: scaleX(0);           /* невидима */
+  transform-origin: left center;  /* растёт слева */
+  transition: transform 0.5s ease;
+  pointer-events: none;
+}
+
+/* При наведении — линия растёт слева направо */
+.trending .games .block:hover span::after {
+  transform: scaleX(1); /* полная ширина */
+}
+
 
 
 
