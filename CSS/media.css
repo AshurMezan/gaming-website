@@ -1,0 +1,11 @@
+@media (max-width: 1209px) {
+    /* Применяем стили только для тега img, который находится внутри .hero */
+    .hero img {
+        width: 50%; /* Новая ширина изображения */
+    }
+
+    .hero--info h1 {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+}
