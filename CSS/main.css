@@ -340,10 +340,12 @@ header nav ul li.btn a:hover {
 /* Вторая строка — смещаем в центр */
 .features .info .block:nth-child(5) {
   grid-column: 2 / 3; /* вторая колонка */
+  width: 100%;
 }
 
 .features .info .block:nth-child(6) {
   grid-column: 3 / 4; /* третья колонка */
+  width: 100%;
 }
 .features .info .block {
   display: flex;
@@ -353,35 +355,48 @@ header nav ul li.btn a:hover {
   text-align: center;
 }
 
+.features .info .block:nth-child(4) {
+  justify-content: space-between;
+}
+
 /* Анимация стрелки: от левого края к правому */
-
-@keyframes slideArrowLoop {
-  0% {
-    transform: translateX(-60px);
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(60px);
-    opacity: 0;
-  }
-}
-
-/* Стрелка: изначально скрыта, вынесена влево */
-.features .info .block .arrow {
+/* Скрываем анимированную стрелку по умолчанию */
+.features .info .block .arrow.animated {
   opacity: 0;
-  align-self: center;           /* центрируем по горизонтали */
+  position: absolute;           /* чтобы не занимала место */
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  pointer-events: none;         /* не мешает кликам */
   transition: opacity 0.2s ease;
-  transform: translateX(-60px); /* стартовая позиция */
 }
 
-/* При наведении — запускаем бесконечную анимацию */
-.features .info .block:hover .arrow {
-  opacity: 1;
-  animation: slideArrowLoop 1.8s ease-in-out infinite;
+/* Статическая стрелка — по умолчанию видна */
+.features .info .block .arrow.static {
+  transition: opacity 0.2s ease;
 }
+
+/* Обертка для позиционирования (добавим relative к .block) */
+.features .info .block {
+  position: relative;  /* важно! чтобы absolute работал внутри */
+  overflow: hidden;    /* скрываем выходящую анимацию */
+}
+
+/* === АНИМАЦИЯ ДВИЖЕНИЯ === */
+@keyframes arrowSlide {
+  0%   { transform: translateX(-70px); opacity: 0; }
+  15%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { transform: translateX(50px);  opacity: 0; }
+}
+
+/* При наведении: скрываем статическую, показываем анимированную */
+.features .info .block:hover .arrow.static {
+  opacity: 0;
+}
+
+.features .info .block:hover .arrow.animated {
+  opacity: 1;
+  animation: arrowSlide 1.6s ease-in-out infinite;
+}
+/* Анимация закончилась */
