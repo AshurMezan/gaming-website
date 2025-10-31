@@ -224,6 +224,7 @@ header nav ul li.btn a:hover {
   padding-bottom: 13px; /* место под линию */
 }
 
+/*Анимация для тега  span  в trending */
 /* Линия — изначально невидима */
 .trending .games .block span::after {
   content: '';
@@ -236,7 +237,7 @@ header nav ul li.btn a:hover {
   border-radius: 10px;
   transform: scaleX(0);           /* невидима */
   transform-origin: left center;  /* растёт слева */
-  transition: transform 0.5s ease;
+  transition: transform 1s ease;
   pointer-events: none;
 }
 
@@ -246,9 +247,7 @@ header nav ul li.btn a:hover {
 }
 
 
-
-
-/* Start Анимация при наведении */
+/* Start Анимация при наведении на карточки*/
 .trending .games .block img {
   transition: all 1s ease;
 }
@@ -303,4 +302,86 @@ header nav ul li.btn a:hover {
 .banner img {
   width: 100%;
   margin: 45px 0 0 0;
+}
+/* banner END*/
+
+/* Start Секция с изображением: features*/
+
+.features {
+  background: url("../IMG/info/background_One.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.features h3 {
+  margin: 90px auto 0 auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 187%;
+  max-width: 825px;
+}
+
+.features_p {
+  font-size: 18px;
+  line-height: 187%;
+  max-width: 825px;
+  margin: 25px auto 0 auto;
+  text-align: center;
+}
+
+.features .info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  max-width: 1000px;
+  margin: 100px auto 0 auto;
+  justify-items: center;
+}
+
+/* Вторая строка — смещаем в центр */
+.features .info .block:nth-child(5) {
+  grid-column: 2 / 3; /* вторая колонка */
+}
+
+.features .info .block:nth-child(6) {
+  grid-column: 3 / 4; /* третья колонка */
+}
+.features .info .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+  text-align: center;
+}
+
+/* Анимация стрелки: от левого края к правому */
+
+@keyframes slideArrowLoop {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+}
+
+/* Стрелка: изначально скрыта, вынесена влево */
+.features .info .block .arrow {
+  opacity: 0;
+  align-self: center;           /* центрируем по горизонтали */
+  transition: opacity 0.2s ease;
+  transform: translateX(-60px); /* стартовая позиция */
+}
+
+/* При наведении — запускаем бесконечную анимацию */
+.features .info .block:hover .arrow {
+  opacity: 1;
+  animation: slideArrowLoop 1.8s ease-in-out infinite;
 }
