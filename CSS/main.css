@@ -400,3 +400,53 @@ header nav ul li.btn a:hover {
   animation: arrowSlide 1.6s ease-in-out infinite;
 }
 /* Анимация закончилась */
+
+/* Секция с изображением: features END*/
+
+/* START блока projects */
+
+.projects h3 {
+  margin: 140px auto 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+.projects p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.projects_flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px 33px;
+  margin-top: 70px;
+}
+
+.flexbox_item {
+  height: 223px;
+  flex: 0 0 auto; /* не растягивать */
+  overflow: hidden;                    /* КЛЮЧЕВОЕ: скрываем выходящее изображение */
+  border-radius: 12px;                 /* опционально: как на скриншоте */
+  transition: transform 0.4s ease;     /* плавность для всего блока (на всякий случай) */
+}
+
+.flexbox_item:nth-child(1) { width: 382px; }
+.flexbox_item:nth-child(2) { width: 382px; }
+.flexbox_item:nth-child(3) { width: 352px; }
+.flexbox_item:nth-child(4) { width: 246px; }
+.flexbox_item:nth-child(5) { width: 400px; }
+.flexbox_item:nth-child(6) { width: 470px; }
+
+
+.flexbox_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1s ease;     /* плавное увеличение */
+}
+
+.flexbox_item:hover img {
+  transform: scale(1.2);               /* +20% */
+}
