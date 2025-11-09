@@ -1,0 +1,266 @@
+.breadcrumbs {
+    font-size: 16px;
+}
+
+.breadcrumbs > span:nth-child(2) {
+    color: var(--main-active);
+    transition: all 0.7s ease;
+}
+
+.breadcrumbs > span:nth-child(2):hover {
+    color: var(--main-active-hover-btn);
+
+}
+
+.hero_about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_about .hero_about-info {
+    max-width: 425px;
+    padding: 50px 0;
+    margin-top: 25px;
+}
+
+.hero_about-title {
+    font-size: 30px;
+    line-height: 180%;
+    margin-top: 40px;
+}
+
+.hero_about-text {
+    margin-top: 25px;
+    line-height: 200%;
+    font-size: 18px;
+}
+
+.info_btn {
+    background: var(--main-gold);
+    color: var(--main-white);
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: none;
+    transition: all 0.7s ease;
+    margin-top: 50px;
+
+}
+
+.info_btn:hover {
+    background: var(--main-active-hover-btn);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.info_btn::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    margin-bottom: 3px;
+    background-image: url('../IMG/about_us/arrow_in_right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    transition: transform 1s ease, opacity 1s ease;
+    transform: translateX(0);
+}
+
+.info_btn:hover::after {
+    animation-name: slide-and-fade;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide-and-fade {
+
+    0% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(20px) scale(0.9);
+        opacity: 0;
+    }
+    50.1% {
+        transform: translateX(0) scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.hero_about-wrapper {
+    position: relative;
+    align-self: baseline;
+}
+
+.wrapper_clicker {
+    display: flex;
+    width: 180px;
+    height: 65px;
+    background: #333333;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
+
+.clicker_left, .clicker_right, .clicker_text {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicker_left:hover, .clicker_right:hover {
+    cursor: pointer;
+}
+
+/* Why work with us */
+.work_title {
+    margin-top: 145px;
+    font-size: 25px;
+    line-height: 180%;
+}
+
+.work_flexbox {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work_flexbox-item {
+    max-width: 380px;
+    border-radius: 7%;
+    padding: 65px 35px;
+    background-color: #1C140F;
+    transition: transform 1s ease;
+}
+
+.work_flexbox-item:hover {
+    transform: scale(1.1);
+}
+
+.work_flexbox .purple {
+    background-color: #560f67;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.work_flexbox .brawn {
+    background-color: #31190d;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.work_flexbox .green {
+    background-color: #192a1d;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.work_flexbox .work_flexbox-item h3 {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.work_flexbox .work_flexbox-item p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 187%;
+}
+
+/* enchantress START */
+.enchantress {
+    background-color: #1C140F;
+}
+
+.enchantress_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 15px 0 15px;
+}
+
+.enchantress_flexbox {
+    display: flex;
+    margin-top: 115px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.enchantress_wrapper {
+    max-width: 535px;
+}
+
+.enchantress_wrapper > span {
+    display: inline-block;
+    margin-right: 135px;
+}
+
+.enchantress_wrapper > h4 {
+    font-size: 28px;
+    line-height: 157%;
+    margin-top: 15px;
+}
+
+.enchantress_wrapper > p {
+    font-size: 18px;
+    line-height: 200%;
+    margin-top: 30px;
+}
+
+.enchantress .container img {
+    border-radius: 15px;
+    transition: transform 1s ease;
+}
+
+.enchantress .container img:hover {
+    transform: scale(1.04);
+}
+
+/* enchantress END */
+
+.team_title {
+    margin-top: 150px;
+    font-size: 25px;
+
+}
+
+.team_flexbox {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_flexbox-item {
+    width: 100%;
+    max-width: 295px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    background-color: #1C140F;
+    border-radius: 7%;
+    transition: transform 1s ease;
+}
+
+.team_flexbox-item:hover {
+    transform: scale(1.04);
+}
+
+.team_flexbox-item h6 {
+    font-size: 18px;
+}
+.team_flexbox-item  span {
+    font-size: 16px;
+}

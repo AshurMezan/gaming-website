@@ -1,6 +1,7 @@
 @import url("fonts.css");
 @import url("var.css");
 @import url("media.css");
+@import url("about_us.css");
 
 /* Poppins Font Weights */
 .poppins-regular {
@@ -304,6 +305,22 @@ header nav ul li.btn a:hover {
   width: 100%;
   margin: 45px 0 0 0;
 }
+
+/*
+.banner_img {
+  position: relative;
+}
+
+
+.banner_img::after {
+content: url('IMG/spider/points.svg');
+position: relative;
+top: -100px;
+right: 200px;
+display: block;
+}
+*/
+
 /* banner END*/
 
 /* Start Секция с изображением: features*/
@@ -576,6 +593,9 @@ footer > .container {
 .footer_about {
   display: flex;
   flex-direction: column
+}
+.footer_about > p:hover {
+  color: var(--main-active)
 }
 
 .footer_about > p:nth-child(2) {
