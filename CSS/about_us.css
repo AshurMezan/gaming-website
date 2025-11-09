@@ -181,6 +181,9 @@
 .enchantress {
     background-color: #1C140F;
 }
+.enchantress .container {
+    margin-top: 145px;
+}
 
 .enchantress_container {
     max-width: 1400px;
@@ -263,4 +266,8 @@
 }
 .team_flexbox-item  span {
     font-size: 16px;
+}
+
+.contact_form .wrapper .email h3 {
+    margin-top: 150px;
 }
