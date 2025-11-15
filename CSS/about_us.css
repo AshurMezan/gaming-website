@@ -98,6 +98,9 @@
     position: relative;
     align-self: baseline;
 }
+.hero_about-wrapper img {
+    border-radius: 15px;
+}
 
 .wrapper_clicker {
     display: flex;
@@ -107,6 +110,7 @@
     position: absolute;
     left: 0;
     bottom: 5px;
+    border-radius: 15px;
 }
 
 .clicker_left, .clicker_right, .clicker_text {
