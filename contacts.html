@@ -92,16 +92,45 @@
     </section>
     <section class="section_form">
         <div class="container">
-            <h2>
-                Say hello
-            </h2>
-            <span>Lorem Ipsum is simply dummy text of the printing.</span>
-            <form action="#" method="post">
-
+            <h2 class="section_form-title poppins-regular">Say hello</h2>
+            <p class="section_form-text poppins-medium">Lorem Ipsum is simply dummy text of the printing.</p>
+            <form action="#" method="post" class="poppins-medium">
+                <div class="inline">
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" type="text" maxlength="25">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" type="text" maxlength="25">
+                    </div>
+                </div>
+                <label for="emailAddress">Email Address</label>
+                <input id="emailAddress" name="emailAddress" type="email" maxlength="25" class="one_line">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" maxlength="500" class="one_line"></textarea>
+                <button type="button">Get in touch</button>
             </form>
         </div>
-
-
+    </section>
+    <section class="section_email">
+        <div class="container email">
+            <h3 class="email__title poppins-semibold">Lorem Ipsum</h3>
+            <p class="email__text poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.</p>
+            <div class="email_block">
+                <div>
+                    <h4 class="email__block-title poppins-medium">Stay in the loop</h4>
+                    <p class="email__block-text poppins-regular">Subscribe to receive the latest news and updates about TDA.
+                        We promise not to spam you!</p>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input maxlength="30" id="email" class="email__input" type="email" placeholder="Enter email address">
+                    <button class="email__button">Continue</button>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 <footer class="block">

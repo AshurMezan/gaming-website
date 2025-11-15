@@ -1,3 +1,4 @@
+/* START section_map */
 .section_map {
     background: rgba(0, 0, 0, 1);
     display: flex;
@@ -67,5 +68,88 @@ body {
     align-items: center;
     padding-left: 35px;
 }
+.section_map-wrapper .social_icon-wrapper img {
+    transition: all 1s ease;
+}
+.section_map-wrapper .social_icon-wrapper img:hover {
+    transform: scale(1.1);
+}
+/* END section_map */
+/* START section_form */
+.section_form {
+    font-size: 16px;
+    /*background: #1C140F;*/
+    background-image: url("../IMG/constacts/fone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section_form-title {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 55px;
+}
+.section_form-text {
+    text-align: center;
+    margin-top: 25px;
+}
+.section_form form {
+    margin: 80px auto;
+    max-width: 600px;
+}
 
+.section_form form .inline {
+    display: flex;
+    justify-content: space-between;
+}
 
+.section_form form .inline > div {
+    width: 100%;
+}
+.section_form form label {
+    color: #4F4F4F;
+}
+.section_form form input, .section_form form textarea {
+    background: #2c2420;
+    border-radius: 10px;
+    border: 0.6px solid #cecece;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: var(--main-white);
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+.section_form form .one_line {
+    width: 96%;
+}
+.section_form form textarea {
+    resize: none;
+    height: 210px;
+}
+
+.section_form form button {
+    background-color: var(--main-active);
+    color: var(--main-white);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    padding: 15px 30px;
+    transition: all 1s ease;
+    margin-right: 20px;
+
+}
+.section_form form button:hover {
+    background-color: var(--main-active-hover-btn);
+    transform: scale(1.02);
+}
+
+.section_email {
+    background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(26, 14, 1, 1) 100%
+    );
+}
