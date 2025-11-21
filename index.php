@@ -55,13 +55,14 @@
         <nav>
             <ul>
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="/about.html">About us</a></li>
+                <li><a href="/about.php">About us</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">News</a></li>
-                <li class="btn"><a href="/contacts.html">Contact</a></li>
+                <li class="btn"><a href="/contacts.php">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <div class="hero container">
         <div class="hero--info">
             <h2 class="poppins-bold">3D game Dev</h2>
