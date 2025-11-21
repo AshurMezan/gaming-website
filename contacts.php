@@ -49,23 +49,14 @@
 </head>
 <body>
 
-<header style="padding-top: 50px" class="container">
-    <span class="logo poppins-extrabold">logo</span>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About us</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">News</a></li>
-            <li class="btn"><a href="/contacts.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<?php
+require_once "templates/header.php";
+?>
 <main>
     <section class="section_map container">
         <nav class="breadcrumbs poppins-regular" aria-label="Хлебные крошки"><span><a
-                href="index.html">Home</a> &gt; </span><span><a
-                href="/contacts.html">Contact us</a></span>
+                href="/index.php">Home</a> &gt; </span><span><a
+                href="/contacts.php">Contact us</a></span>
         </nav>
         <h1 class="section_map-title poppins-semibold">Lorem Ipsum is simply dummy text of the printing and.</h1>
         <span class="section_map-text poppins-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
@@ -133,37 +124,9 @@
         </div>
     </section>
 </main>
-<footer class="block">
-    <div class="container">
-        <div class="footer_logo">
-            <p class=" poppins-extrabold">logo</p>
-            <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.</p>
-            <p class="poppins-regular">@Logo</p>
-        </div>
-        <div class="footer_about poppins-regular">
-            <p><a href="#">About us</a></p>
-            <p><a href="#">Zeux</a></p>
-            <p><a href="#">Portfolio</a></p>
-            <p><a href="#">Careers</a></p>
-            <p><a href="#">Contact us</a></p>
-        </div>
-        <div class="footer_contacts poppins-regular">
-            <p>Contact us</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <p>+908 89097 890</p>
-        </div>
-        <div class="footer_social">
-            <a href="#"><img src="IMG/footer/fasebook.svg" alt=""></a>
-            <a href="#"><img src="IMG/footer/instagram.svg" alt=""></a>
-            <a href="#"><img src="IMG/footer/twitter.svg" alt=""></a>
-            <a href="#"><img src="IMG/footer/in.svg" alt=""></a>
-        </div>
-    </div>
-    <div class="footer_end poppins-regular">
-        <p>Copyright ® 2021 Lorem All rights Rcerved</p>
-    </div>
-</footer>
+<?php
+require_once "templates/footer.php";
+?>
 <script></script>
 </body>
 </html>

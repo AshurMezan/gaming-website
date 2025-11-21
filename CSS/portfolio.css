@@ -1,0 +1,98 @@
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+/* START section-one*/
+.portfolio__section-one {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+.portfolio__section-one nav span:nth-child(2) {
+    padding-left: 5px;
+}
+.portfolio__section-one--title {
+    font-size: 33px;
+    line-height: 180%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.portfolio__section-one--text {
+    font-size: 18px;
+    line-height: 185%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.portfolio__section-one nav {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__section-one--wrapper {
+    margin: 50px auto;
+    background-color: #1C140F;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1140px;
+    height: 200px;
+    padding: 35px;
+
+}
+
+.portfolio__section-one--wrapper-item {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+    padding: 35px 95px;
+}
+.portfolio__section-one--wrapper-item:nth-child(2) {
+    border-left: 2px solid var(--main-white);
+    border-right: 2px solid var(--main-white);
+}
+.portfolio__section-one--wrapper-item div p:nth-child(1) {
+    font-size: 25px;
+}
+.portfolio__section-one--wrapper-item div p:nth-child(2) {
+    font-size: 20px;
+    margin-top: 15px;
+}
+/* section-one END*/
+/* START section-two*/
+.section-two_wrapper {
+    margin: 130px auto 0 auto;
+    max-width: 1185px;
+    display: flex;
+    column-gap: 85px;
+}
+
+.section-two-title {
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.section-two--text {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.section-two__list, .section-two__list li {
+    margin-top: 20px;
+
+}
+
+.section-two__list-item::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../IMG/portfolio/check.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-right: 20px;
+    vertical-align: middle;
+}

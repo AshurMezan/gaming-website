@@ -1,1 +1,19 @@
+# СТАНДАРТНАЯ КОДИРОВКА
 AddDefaultCharset UTF-8
+
+# УПРАВЛЕНИЕ ОШИБКАМИ И ОТЛАДКА
+php_flag display_errors on
+php_value error_reporting -1
+php_flag html_errors on
+
+# НАСТРОЙКА ИНДЕКСА И ЗАЩИТА
+DirectoryIndex index.php index.html
+Options -Indexes
+
+# ПРАВИЛА ДЛЯ ЧПУ (MOD_REWRITE)
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
