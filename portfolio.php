@@ -124,8 +124,36 @@
             </div>
         </div>
     </section>
-
-
+    <section class="section-four">
+           <div class="container">
+               <div class="section-four_wrapper-content">
+                   <div class="section-four_IMG">
+                       <img src="IMG/portfolio/fairy.svg" alt="картинка" width="600" height="540">
+                   </div>
+                   <div class="section-four_content">
+                       <h4>Lorem Ipsum is simply dummy text dummy text</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                       <button class="portfolio-btn">Read more</button>
+                   </div>
+               </div>
+           </div>
+    </section>
+    <section class="section-five">
+        <div class="container">
+            <div class="section-five_wrapper-content">
+                <div class="section-five_content">
+                    <h5>Lorem Ipsum is simply dummy text dummy text</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <button class="portfolio-btn">Read more</button>
+                </div>
+                <div class="section-five_IMG">
+                    <img src="IMG/portfolio/crisys.png" alt="картинка" width="600" height="540">
+                </div>
+            </div>
+        </div>
+    </section>
     <?php
     require_once "templates/footer.php";
     ?>
