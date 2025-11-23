@@ -141,7 +141,7 @@
     max-width: 380px;
     border-radius: 7%;
     padding: 65px 35px;
-    background-color: #1C140F;
+    background-color: var(--background);
     transition: transform 1s ease;
 }
 
@@ -183,7 +183,7 @@
 
 /* enchantress START */
 .enchantress {
-    background-color: #1C140F;
+    background-color: var(--background);
 }
 .enchantress .container {
     margin-top: 145px;
@@ -256,7 +256,7 @@
     justify-content: center;
     align-items: center;
     row-gap: 15px;
-    background-color: #1C140F;
+    background-color: var(--background);
     border-radius: 7%;
     transition: transform 1s ease;
 }

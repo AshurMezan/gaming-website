@@ -500,7 +500,7 @@ display: block;
   display: none;
 }
 .email_block {
-  background-color: #1C140F;
+  background-color: var(--background);
   /*max-width: 1170px;*/
   width: 93%;
   border-radius: 15px;

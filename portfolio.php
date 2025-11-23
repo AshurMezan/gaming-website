@@ -113,10 +113,14 @@
         <div class="container">
             <div class="section-three_wrapper-content">
                 <div class="section-three_content">
-                <h3 class="poppins-medium">Lorem Ipsum is simply dummy text dummy text </h3>
-                <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-                <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <button class="portfolio-btn poppins-regular">Read more</button>
+                    <h3 class="poppins-medium">Lorem Ipsum is simply dummy text dummy text </h3>
+                    <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries,</p>
+                    <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. </p>
+                    <button class="portfolio-btn poppins-regular">Read more</button>
                 </div>
                 <div class="section-three_IMG">
                     <img src="IMG/about_us/image_one.svg" alt="картинка" width="600" height="540">
@@ -125,27 +129,33 @@
         </div>
     </section>
     <section class="section-four">
-           <div class="container">
-               <div class="section-four_wrapper-content">
-                   <div class="section-four_IMG">
-                       <img src="IMG/portfolio/fairy.svg" alt="картинка" width="600" height="540">
-                   </div>
-                   <div class="section-four_content">
-                       <h4>Lorem Ipsum is simply dummy text dummy text</h4>
-                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                       <button class="portfolio-btn">Read more</button>
-                   </div>
-               </div>
-           </div>
+        <div class="container">
+            <div class="section-four_wrapper-content">
+                <div class="section-four_IMG">
+                    <img src="IMG/portfolio/fairy.svg" alt="картинка" width="600" height="540">
+                </div>
+                <div class="section-four_content">
+                    <h4 class="poppins-medium">Lorem Ipsum is simply dummy text dummy text</h4>
+                    <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries,</p>
+                    <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <button class="portfolio-btn">Read more</button>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="section-five">
         <div class="container">
             <div class="section-five_wrapper-content">
                 <div class="section-five_content">
-                    <h5>Lorem Ipsum is simply dummy text dummy text</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <h5 class="poppins-medium">Lorem Ipsum is simply dummy text dummy text</h5>
+                    <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries,</p>
+                    <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                     <button class="portfolio-btn">Read more</button>
                 </div>
                 <div class="section-five_IMG">
@@ -154,10 +164,34 @@
             </div>
         </div>
     </section>
+</div>
+<section class="portfolio-reviews">
+    <h6>Trusted by Thousands of<br>Happy Customer</h6>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.Lorem Ipsum is simply dummy.</p>
+    <div class="slider-container">
+        <div class="slider-wrapper" id="slider">
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+        </div>
+        <button></button>
+        <button></button>
+    </div>
+
+</section>
+<div class="wrapper">
     <?php
-    require_once "templates/footer.php";
+    require "templates/email.php";
     ?>
 </div>
-
+<?php
+require_once "templates/footer.php";
+?>
 </body>
 </html>
