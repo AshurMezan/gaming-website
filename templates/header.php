@@ -1,6 +1,9 @@
 <?php
 $current_page = basename($_SERVER['PHP_SELF']);
 ?>
+<!--Комментарий к строке выше: смотри $_SERVER['PHP_SELF'] -- это встроенная в язык РНР глобальная переменная,
+она содержит путь к текущему выполняемому файлу, относительно корня сайта. Например, если ты открыл страницу: https://site.com/portfolio.php
+$_SERVER['PHP_SELF'] = "/portfolio.php" А функция basename( берёт только имя файла. -->
 
 <header style="padding-top: 50px" class="container">
     <span class="logo poppins-extrabold">logo</span>

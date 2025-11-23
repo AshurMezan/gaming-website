@@ -56,6 +56,7 @@
     ?>
 
     <section class="portfolio__section-one">
+
         <nav class="breadcrumbs poppins-regular" aria-label="Хлебные крошки"><span><a
                         href="/index.php">Home</a> &gt; </span><span><a
                         href="/portfolio.php">Portfolio</a></span></nav>
@@ -86,20 +87,40 @@
                 </div>
             </div>
         </div>
+
     </section>
     <section class="section-two">
-        <div class="section-two_wrapper">
-        <video src="video/SpiderMan.mp4" controls muted poster="IMG/portfolio/heroVideo.svg" width="770" height="355"></video>
-            <div class="section-two_wrapper-content">
-                <h2 class="section-two-title poppins-bold">Lorem Ipsum is simply dummy text.</h2>
-                <p class="section-two--text poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy.</p>
-                <ul class="section-two__list">
-                    <li><span class="poppins-regular section-two__list-item">Lorem Ipsum is simply</span></li>
-                    <li><span class="poppins-regular section-two__list-item">Lorem Ipsum is simply</span></li>
-                    <li><span class="poppins-regular section-two__list-item">Lorem Ipsum is simply</span></li>
-                    <li><span class="poppins-regular section-two__list-item">Lorem Ipsum is simply</span></li>
-                    <li><span class="poppins-regular section-two__list-item">Lorem Ipsum is simply</span></li>
-                </ul>
+        <div class="container">
+            <div class="section-two_wrapper">
+                <video src="video/SpiderMan.mp4" controls muted poster="IMG/portfolio/heroVideo.svg" width="770"
+                       height="355"></video>
+                <div class="section-two_wrapper-content">
+                    <h2 class="section-two-title poppins-bold">Lorem Ipsum is simply dummy text.</h2>
+                    <p class="section-two--text poppins-regular">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy.</p>
+                    <ul class="section-two__list">
+                        <li><span class="poppins-regular section-two__list-item">Lorem Ipsum is simply</span></li>
+                        <li><span class="poppins-regular section-two__list-item">Lorem Ipsum is simply</span></li>
+                        <li><span class="poppins-regular section-two__list-item">Lorem Ipsum is simply</span></li>
+                        <li><span class="poppins-regular section-two__list-item">Lorem Ipsum is simply</span></li>
+                        <li><span class="poppins-regular section-two__list-item">Lorem Ipsum is simply</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-three">
+        <div class="container">
+            <div class="section-three_wrapper-content">
+                <div class="section-three_content">
+                <h3 class="poppins-medium">Lorem Ipsum is simply dummy text dummy text </h3>
+                <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                <p class="poppins-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <button class="portfolio-btn poppins-regular">Read more</button>
+                </div>
+                <div class="section-three_IMG">
+                    <img src="IMG/about_us/image_one.svg" alt="картинка" width="600" height="540">
+                </div>
             </div>
         </div>
     </section>
