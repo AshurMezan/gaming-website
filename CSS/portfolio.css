@@ -100,6 +100,9 @@ ul {
 /* END section-two*/
 
 /* START section-three, section-four, section-five */
+.section-five > .container {
+    padding-bottom: 165px;
+}
 .section-three_wrapper-content,
 .section-four_wrapper-content,
 .section-five_wrapper-content {
@@ -165,4 +168,68 @@ ul {
 /* START portfolio-reviews */
 .portfolio-reviews {
     background-color: var(--background);
+}
+
+.portfolio-reviews_title {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 85px;
+}
+.portfolio-reviews_text {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 180%;
+}
+.slider-container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+.slider-wrapper {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+}
+.slider-item {
+    width: 400px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px solid var(--main-white);
+    transition: border-color 0.7s ease-in-out;
+    padding: 20px 15px;
+}
+.slider-item:hover {
+    border: 2px solid var(--main-active);
+}
+.slider-item_wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.slider-item_wrapper div {
+    display: flex;
+    align-items: center
+}
+.slider-item_wrapper > div:first-child {
+    column-gap: 20px;
+}
+.slider-item_wrapper > div:nth-child(2) {
+    column-gap: 10px;
+}
+.slider-item_wrapper > div:nth-child(2) > img {
+    width: 20px;
+}
+.slider-item > p {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 180%;
+}
+.slider-wrapper span {
+    font-size: 14px;
+    color: #4F5665;
 }

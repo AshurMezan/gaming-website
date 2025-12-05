@@ -17,3 +17,13 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [L,QSA]
+
+# -----------------------------------------------------------------
+# БЛОК ДЛЯ ОТКЛЮЧЕНИЯ КЭШИРОВАНИЯ CSS/JS ВО ВРЕМЯ РАЗРАБОТКИ
+# -----------------------------------------------------------------
+<IfModule mod_headers>
+    # Для CSS и JavaScript: установить немедленное устаревание
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=0, must-revalidate"
+    </FilesMatch>
+</IfModule>
