@@ -233,3 +233,51 @@ ul {
     font-size: 14px;
     color: #4F5665;
 }
+.slider-container_for_button-and-points {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slider-container_points {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    column-gap: 15px;
+    align-items: center;
+}
+.point-item {
+    background-color: var(--main-white);
+    height: 20px;
+    border-radius: 50%;
+    width: 20px;
+}
+
+.slider-active {
+    background-color: var(--main-active);
+    width: 55px;
+    border-radius: 10px;
+}
+.slider-container_button {
+    display: flex;
+    column-gap: 20px;
+}
+.slider_btm {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--main-gold);
+    background-color: transparent;
+    cursor: pointer;
+}
+.slider_btm-left {
+    background-image: url('../IMG/portfolio/arrow_back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider_btm-right {
+    background-image: url('../IMG/portfolio/arrow_next.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}

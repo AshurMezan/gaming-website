@@ -334,14 +334,14 @@ require_once "templates/header.php";
         </div>
         <div class="slider-container_for_button-and-points">
             <div class="slider-container_points">
-                <div class="point-item"></div>
+                <div class="point-item slider-active"></div>
                 <div class="point-item"></div>
                 <div class="point-item"></div>
                 <div class="point-item"></div>
             </div>
             <div class="slider-container_button">
-                <button></button>
-                <button></button>
+                <button class="slider_btm slider_btm-left"></button>
+                <button class="slider_btm slider_btm-right"></button>
             </div>
         </div>
 
