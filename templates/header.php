@@ -22,7 +22,7 @@ $_SERVER['PHP_SELF'] = "/portfolio.php" А функция basename( берёт �
             </li>
 
             <li>
-                <a href="#">News</a>
+                <a href="/news.php">News</a>
             </li>
 
             <li class="btn">
