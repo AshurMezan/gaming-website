@@ -184,13 +184,16 @@ ul {
 .slider-container {
     max-width: 70%;
     margin: 0 auto;
+
 }
 .slider-wrapper {
     margin-top: 70px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Изменено с wrap на nowrap */
     column-gap: 50px;
+    overflow: hidden; /* Скрываем элементы за пределами контейнера */
+    justify-content: flex-start; /* Выравнивание по левому краю */
 }
 .slider-item {
     width: 400px;
@@ -201,6 +204,7 @@ ul {
     border: 2px solid var(--main-white);
     transition: border-color 0.7s ease-in-out;
     padding: 20px 15px;
+    flex-shrink: 0; /* Запрещаем сжатие элементов */
 }
 .slider-item:hover {
     border: 2px solid var(--main-active);
