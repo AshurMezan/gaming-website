@@ -239,6 +239,7 @@ ul {
 }
 .slider-container_for_button-and-points {
     margin-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -284,4 +285,27 @@ ul {
     background-image: url('../IMG/portfolio/arrow_next.png');
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* Стили для неактивных кнопок */
+.slider_btm:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 1400px) {
+    .slider-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-item {
+        width: 350px;
+    }
+
+    .slider-container_points {
+        column-gap: 10px;
+    }
 }
